@@ -1,6 +1,39 @@
 {
-    "blocked_ips": [
-        "224.0.0.22"
-    ],
-    "blocked_ports": []
+  "acl_rules": [
+      {
+          "action": "deny",
+          "src_ip": "any",
+          "dst_ip": "224.0.0.251",
+          "protocol": "udp",
+          "port": "5353"
+      },
+      {
+          "action": "deny",
+          "src_ip": "any",
+          "dst_ip": "224.0.0.22",
+          "protocol": "udp",
+          "port": "any"
+      },
+      {
+          "action": "deny",
+          "src_ip": "any",
+          "dst_ip": "255.255.255.255",
+          "protocol": "udp",
+          "port": "any"
+      },
+      {
+          "action": "allow",
+          "src_ip": "any",
+          "dst_ip": "any",
+          "protocol": "tcp",
+          "port": "22"
+      },
+      {
+          "action": "allow",
+          "src_ip": "any",
+          "dst_ip": "any",
+          "protocol": "tcp",
+          "port": "443"
+      }
+  ]
 }
