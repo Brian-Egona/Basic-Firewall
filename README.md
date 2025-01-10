@@ -64,7 +64,6 @@ A simple way to test the firewall is by taking the following steps:
 
 By following this process, you can confirm that the firewall correctly identifies and blocks unauthorized traffic, ensuring enhanced security for your network.
 
-Below are screenshot of me testing this firewall:
 
 
 
